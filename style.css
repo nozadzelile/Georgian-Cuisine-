@@ -13,12 +13,12 @@ header {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -52,6 +52,30 @@ header a {
     background-color: white;
     margin-top: 20px;
 }
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+}
+
+.grid-2-col img {
+    max-width: 100%;
+}
+
+.grid-2-col p {
+    line-height: 1.4;
+}
+
+.grid-2-col h2 {
+    margin: 0;
+}
+
+.grid-2-col .georgia-is {
+    opacity: 0.4;
+}
+
 
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -87,15 +111,12 @@ footer a {
     opacity: 0.7;
 }
 
-.grid {
+.grid-3-col {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 60px;
 }
 
-.about-footer {
-    display: grid;
-    gap: 80px;
-}
 
 
 @media (max-width: 800px) {
@@ -117,5 +138,9 @@ footer a {
 
     header a {
         font-size: 14px;
+    }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
     }
 }
